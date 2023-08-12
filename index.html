@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ex-forms/forme.css">
+    <title>Car</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption>Car Information</caption>
+            <thead>
+                <tr>
+                    <th scope="col" onclick="sortTable(0)">marca</th>
+                    <th scope="col" onclick="sortTable(1)">model</th>
+                    <th scope="col" onclick="sortTable(2)">an</th>
+                    <th scope="col" onclick="sortTable(3)">culoare</th>
+                    <th scope="col">Actions</th>
+
+                </tr>
+            </thead>
+
+            <tbody class="car-container">
+            </tbody>
+
+        </table>
+
+    </div>
+    <section class="container-add">
+
+        <fieldset class="fieldset">
+
+            <legend><span class="number">1</span> Add CAR</legend>
+
+            <label for="Marca">Marca:</label>
+            <input type="text" id="marca" name="marca">
+            <label for="Model">Model:</label>
+            <input type="text" id="model" name="model">
+            <label for="an">An:</label>
+            <input type="number" id="an" name="an" />
+            <!-- <input type="text" id="an" name="an"> -->
+            <label for="Culoare">Culoare:</label>
+            <input type="text" id="culoare" name="culoare">
+
+        </fieldset>
+
+
+        <button class="add redBtn" disabled title="Adauga inregistrare">Add </button>
+
+
+
+    </section>
+    <!-- <div class = "cautare">
+        <input type="text" id="myInput" onkeyup="Filtrare()" placeholder="Cauta dupa nume">
+      </div> -->
+    </section>
+    <script src="./data.js"></script>
+
+    <script src="./functions.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
